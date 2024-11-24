@@ -1,0 +1,176 @@
+:root {
+    --main-color: #025455;
+    --second-color: #00ffff;
+    --third-color: #220101;
+    --fourth-color: #222121;
+    --gradient-color: linear-gradient(
+      0deg,
+      rgba(47, 2, 2, 1) 19%,
+      rgba(0, 255, 255, 1) 100%
+    );
+    --main-font-color: #00ffff;
+    --second-font-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--fourth-color);
+    margin: 0;
+    height: auto;
+  }
+
+
+/* HEADER */
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    background: linear-gradient(
+      0deg,
+      rgba(47, 2, 2, 0.5) 19%,
+      rgba(0, 255, 255, 0.5) 100%
+    );
+    position: sticky;
+    top: 0;
+    z-index: 5000; /* S'assure qu'elle reste au-dessus des autres éléments */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .generalTitle {
+    font-size: 24px;
+    color: var(--main-font-color);
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .navBar ul {
+    display: flex;
+    width: 38%;
+    gap: 13%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navBar ul li a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    opacity: 75%;
+    font-size: 22px; 
+    font-weight: 500;
+    transition: color 0.6s ease; 
+  }
+  
+  .navBar ul li a:hover {
+    color: var(--main-font-color);
+    opacity: 100%;
+  }
+  
+  .burgerMenu {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--main-font-color);
+  }
+  
+  @media (max-width: 768px) {
+  
+    .navBar ul {
+      display: none;
+      flex-direction: column; 
+      width: 100%;  
+      gap: 10px;
+      text-align: center;
+    }
+  
+    
+    .burgerMenu {
+      display: block;  
+      color: var(--second-color);
+      width: 30px;
+      height: 30px;
+    }
+  
+    /* Affichage du menu lorsqu'il est activé */
+    .navBar ul.active {
+      display: flex;  /* Montrer le menu */
+    }
+  
+    /* Liens de navigation */
+    .navBar ul li a {
+      font-size: 18px;
+    }
+  }
+
+  
+
+
+/* MAIN */
+
+
+main {
+    display: flex;
+    justify-content: center;
+ 
+}
+   
+/* Chart */
+
+.board {
+    width: 90%;
+    height: 100%;
+    background-color: #003b4d;
+    border-radius: 2%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    
+
+}
+
+.boardChart{
+  width: 100%;
+  height: 70%;
+  color: white;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.boardChart img {
+  width: 45%;
+}
+
+.boardSkillsCards {
+  width: 100%;
+  height: 30%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.boardSkillsCardsline {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boardSkillsCards .card{
+    width: 48%;
+    height: 100%;
+    background-color: #003b4d;
+    color: white;
+    border-style: solid;
+    border-radius: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+
