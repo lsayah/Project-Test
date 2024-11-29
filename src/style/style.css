@@ -1,6 +1,7 @@
 /* BODY */
 
 :root {
+  /* Colors */
   --main-color: #025455;
   --second-color: #00ffff;
   --third-color: #220101;
@@ -13,6 +14,7 @@
   --main-font-color: #00ffff90;
   --second-font-color: #ffffff;
 
+  /* Fonts */
   --main-font: "orbitron", sans-serif;
   --second-font: "orbit", sans-serif;
 }
@@ -24,7 +26,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  background-image: url(../Portefoliosite/);
+  background-image: url(../../image/fond\ trader.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;

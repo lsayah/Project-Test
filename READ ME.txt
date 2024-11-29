@@ -1,0 +1,31 @@
+PRESENTATION DE MON PORTFOLIO
+
+Bienvenue dans mon portfolio. Ce document a pour but de présenter la structure actuelle de mon portfolio, les défis rencontrés lors de sa gestion, ainsi que les évolutions futures prévues pour l'améliorer. Mon portfolio reflète mon parcours, mes compétences et mes projets réalisés jusqu'à présent.
+
+
+STRUCTURE DU DOSSIER
+J'ai voulue organisé mon dossier dans le respect des convention mais la structure du dossier de mon portfolio a été un défi.
+
+. Tentative de structure tardive : La mise en place d'une structure claire est intervenue à un stade avancé du projet, ce qui a engendré des complications.
+. Problème non résolu de rangement. difficultés persistent pour l'organisation optimale des pages, styles... etc nécessitant des ajustements futurs pour améliorer la navigation dans le dossier.
+
+GESTION DU PROJET
+La gestion du projet de ce portfolio a impliqué plusieurs compromis :
+
+. Passer trop de temps sur le design général et les detail de décorations. Une grande partie de mon temps a été mangé par le design et la décoration, ce qui a parfois retardé d'autres aspects critiques du projet.
+. Compromis pour le responsive : Adapter le portfolio pour qu'il soit responsive. J'ai fait des choix de structure pour adapté à différents appareils et tailles d'écran. Cela a nécessité des compromis sur certains éléments de design.
+. Compromis par rapport aux délais et aux capacités actuelles. Les contraintes de temps et mes compétences encore limité m'ont soumis a des limites, influençant certaines décisions de conception et de développement.
+
+
+EVOLUTION DU PORTFOLIO
+Je compte faire évoluer mon portfolio a l'avenir pour avoir un rendu professionnel pour la fin d'année scolaire
+
+. Régler les animations : Optimiser les animations pour les rendre plus fluides et cohérentes.
+. Possible révision de la charte graphique (couleurs/polices) : Réévaluer les choix de couleurs et de typographie pour une meilleure harmonie visuelle.
+. Une meuilleure mise en valeur des projets : Travailler sur la présentation des projets pour qu'ils soient plus attractifs, clair et informatifs.
+. Carrousel pour les derniers projets : Intégrer un carrousel pour mettre en avant les projets récents de manière dynamique.
+. Animation JavaScript pour la timeline : Fluidifier l'animation de la timeline avec des scripts JavaScript pour une meilleure expérience utilisateur.
+. Participation aux projets scolaire et participation ou mise en place de projet annexe et/ou personnel. Dans le but d'alimenter le portfolio 
+
+OBJECTIF 
+Création future d'un second portfolio.Ce nouveau portfolio sera basé sur une nouvelle idée, permettant d'explorer d'autres concepts et approches pour présenter mes compétences et réalisations. plus center sur les projets et mes compétences.
