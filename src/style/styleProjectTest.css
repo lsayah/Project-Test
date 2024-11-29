@@ -3,18 +3,17 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 :root {
-  --main-color: #025455;
+  /* Colors */
+  --main-color: #004d67;
   --second-color: #00ffff;
-  --third-color: #220101;
-  --fourth-color: #222121;
-  --gradient-color: linear-gradient(
-    0deg,
-    rgb(25, 25, 25) 19%,
-    rgb(39, 0, 0) 100%
-  );
+  --fourth-color: #233044;
+  --gradient-color: linear-gradient(0deg, #233044 19%, #00000090 100%);
+  --gradient-inverse-color: linear-gradient(0deg, #000000 19%, #233044 100%);
+  --second-gradient-color: linear-gradient(0deg, #004D67 19%, #00FFFF 100%);
   --main-font-color: #00ffff;
   --second-font-color: #ffffff;
 
+  /* Fonts */
   --main-font: "orbitron", sans-serif;
   --second-font: "orbit", sans-serif;
 }
@@ -33,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0% 2%;
-  background: var(--gradient-color);
+  background: var(--gradient-inverse-color);
   position: sticky;
   top: 0;
   z-index: 5000;
@@ -106,7 +105,7 @@ body {
   color: var(--main-font-color);
   opacity: 75%;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   transition: color 0.6s ease;
   font-family: var(--main-font);
   text-shadow: 6px 6px 15px rgba(0, 0, 0, 1);
@@ -168,6 +167,7 @@ body {
     right: 10px;
   }
 }
+
 
 /* MAIN */
 
