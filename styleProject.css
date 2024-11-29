@@ -7,11 +7,14 @@
   --fourth-color: #222121;
   --gradient-color: linear-gradient(
     0deg,
-    rgba(47, 2, 2, 1) 19%,
-    rgba(0, 255, 255, 1) 100%
+    rgb(25, 25, 25) 19%,
+    rgb(39, 0, 0) 100%
   );
   --main-font-color: #00ffff;
   --second-font-color: #ffffff;
+
+  --main-font: "orbitron", sans-serif;
+  --second-font: "orbit", sans-serif;
 }
 
 body {
@@ -25,88 +28,148 @@ body {
 /* HEADER */
 
 .navBar {
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 2%;
-  background: linear-gradient(
-    0deg,
-    rgba(47, 2, 2, 0.5) 19%,
-    rgba(0, 255, 255, 0.5) 100%
-  );
+  padding: 0% 2%;
+  background: var(--gradient-color);
   position: sticky;
   top: 0;
-  z-index: 5000; /* S'assure qu'elle reste au-dessus des autres éléments */
-  overflow: hidden;
+  z-index: 5000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .generalTitle {
-  font-size: 24px;
+  font-size: 1rem;
   color: var(--main-font-color);
   font-weight: bold;
   margin: 0;
+  font-family: var(--main-font);
+  position: relative;
+  padding-left: 1%;
+  text-decoration: none;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+.generalTitle:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00ffff;
+  transform-style: linear;
+  transition-property: height, width;
+  transition-delay: 0.5s, 1s;
+  transition-duration: 0.5s;
+}
+.generalTitle:hover:before {
+  transition-property: width, height;
+  width: 15px;
+  height: 100%;
+}
+.generalTitle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  transform: scaleX(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+  transform-origin: left;
+  z-index: -1;
+}
+.generalTitle:hover:after {
+  transform: scaleX(1);
+  transition-delay: 1.5s;
 }
 
-.navBar ul {
+.navBarList {
   display: flex;
-  width: 38%;
-  gap: 13%;
+  justify-content: space-between;
+  width: 40rem;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.navBarList.active {
+  max-height: 400px;
 }
 
 .navBar ul li a {
   text-decoration: none;
   color: var(--main-font-color);
   opacity: 75%;
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 500;
   transition: color 0.6s ease;
+  font-family: var(--main-font);
+  text-shadow: 6px 6px 15px rgba(0, 0, 0, 1);
 }
 
 .navBar ul li a:hover {
   color: var(--main-font-color);
   opacity: 100%;
+  font-size: 1.2rem;
+  transition: font-size 0.3s ease;
 }
 
-.burgerMenu {
+#burgerMenu {
   display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: var(--main-font-color);
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .navBar ul {
+#burgerMenu.active {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 860px) {
+  .navBar {
+    background: rgb(39, 0, 0);
+  }
+  .navBarList {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 30%;
     gap: 10px;
     text-align: center;
+    background: var(--gradient-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    margin-left: 70%;
   }
 
-  .burgerMenu {
+  .navBarList.active {
+    display: flex;
+    max-height: 300px;
+    transition: max-height 0.3s ease;
+  }
+
+  .navBarList li {
+    margin: 5% 0;
+  }
+
+  #burgerMenu {
     display: block;
-    color: var(--second-color);
-    width: 30px;
-    height: 30px;
-  }
-
-  /* Affichage du menu lorsqu'il est activé */
-  .navBar ul.active {
-    display: flex; /* Montrer le menu */
-  }
-
-  /* Liens de navigation */
-  .navBar ul li a {
-    font-size: 18px;
+    font-size: 24px;
+    color: var(--main-font-color);
+    cursor: pointer;
+    z-index: 6000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }
 
 /* MAIN */
-
 
 section#carousel {
   grid-row: 1 / 2;
@@ -159,139 +222,42 @@ div.item:nth-of-type(5) {
   background-color: #e9ff70;
 }
 
-input:nth-of-type(1) {
+div:nth-of-type(1) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
-input:nth-of-type(1):checked ~ section#carousel {
+div:nth-of-type(1):checked ~ section#carousel {
   --position: 1;
 }
 
-input:nth-of-type(2) {
+div:nth-of-type(2) {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
-input:nth-of-type(2):checked ~ section#carousel {
+div:nth-of-type(2):checked ~ section#carousel {
   --position: 2;
 }
 
-input:nth-of-type(3) {
+div:nth-of-type(3) {
   grid-column: 4 /5;
   grid-row: 2 / 3;
 }
-input:nth-of-type(3):checked ~ section#carousel {
+div:nth-of-type(3):checked ~ section#carousel {
   --position: 3;
 }
 
-input:nth-of-type(4) {
+div:nth-of-type(4) {
   grid-column: 5 / 6;
   grid-row: 2 / 3;
 }
-input:nth-of-type(4):checked ~ section#carousel {
+div:nth-of-type(4):checked ~ section#carousel {
   --position: 4;
 }
 
-input:nth-of-type(5) {
+div:nth-of-type(5) {
   grid-column: 6 / 7;
   grid-row: 2 / 3;
 }
-input:nth-of-type(5):checked ~ section#carousel {
+div:nth-of-type(5):checked ~ section#carousel {
   --position: 5;
-}
-
-/* FOOTER */
-
-footer {
-  margin: 0;
-  position: relative;
-  z-index: 1; /* Assure que le contenu reste au-dessus */
-  color: white; /* Le texte reste visible */
-  padding-top: 10px;
-  overflow: hidden; /* Évite que le pseudo-élément dépasse les bords */
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(47, 2, 2, 1) 19%,
-    rgba(0, 255, 255, 1) 100%
-  );
-  opacity: 0.75; /* Ajuste uniquement l’opacité du dégradé */
-  z-index: -1; /* Place le dégradé derrière le contenu */
-}
-
-.reseauxContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10%;
-}
-
-.reseauxContainer a {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: var(--second-font-color);
-  border-color: black;
-}
-
-.reseauxContainer img {
-  width: 10%;
-}
-
-.contactContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5%;
-  padding-bottom: 150px;
-}
-
-.contactContainer p {
-  font-size: 24px;
-  color: var(--second-font-color);
-  margin-bottom: 1%;
-}
-
-.contactContainerInfo {
-  width: 30%;
-  height: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contactContainerInfo input {
-  width: 95%;
-  height: 45px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contactContainerName {
-  margin-bottom: 65px;
-}
-
-.contactContainerMessage {
-  width: 30%;
-  height: 100%;
-
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contactContainerMessage input {
-  width: 95%;
-  height: 200px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }

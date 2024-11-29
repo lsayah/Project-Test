@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbit&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <div class="navBar">
-        <p class="generalTitle">PORTEFOLIO</p>
-        <div id="burgerMenu" onclick="toggleMenu()">&#9776;</div>
+        <p class="generalTitle">.PORTFOLIO</p>
+        <div id="burgerMenu">&#9776;</div>
         <ul class="navBarList">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="indexAbout.html">About</a></li>
-          <li><a href="indexSkills.html">Skills</a></li>
-          <li><a href="indexProjects.html">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="indexAbout.html">ABOUT</a></li>
+          <li><a href="indexSkills.html">SKILLS</a></li>
+          <li><a href="indexProjectTest.html">PROJECT</a></li>
+          <li><a href="#bottom">CONTACT</a></li>
         </ul>
       </div>
       <div class="headerBanner">
         <div class="headerBannerTextContainer">
-          <h1>Hi,</h1>
-          <h1>I’m <span style="color: #00ffff">Elias</span></h1>
-          <h1>IT student</h1>
-          <h1>Financial Specialist</h1>
-          <hr />
+          <div id="autotext"></div>
+          <hr class="line" />
         </div>
         <div class="headerBannerImg">
           <img
@@ -37,45 +46,157 @@
             src="image/Capture_d_écran_2024-11-14_122222-removebg-preview.png"
             alt="Cybersecurity logo"
           />
-          <img
-            src="image/Capture_d_écran_2024-11-14_121523-removebg-preview.png"
-            alt="Finance logo"
-          />
+          <img src="image/finance logo.png" alt="Finance logo" />
         </div>
+
+        <a href="#miniBio" class="autoScroll"
+          ><img src="image/scroll-down-white.gif" alt=""
+        /></a>
       </div>
     </header>
 
     <main>
-      <div class="miniBio">
-        <h1>script>Presente_Myself /script></h1>
-        <br />
-        <p>
-          Après avoir obtenu un master en finance en alternance, je me
-          spécialise dans le domaine de l'informatique pour répondre aux besoins
-          et enjeux technologiques actuels. Ce double parcours me permiet de
-          développer une approche transversale, combinant rigueur financière et
-          maîtrise des outils numériques. Actuellement en quête d'un stage pour
-          mi-2025, je suis également à la recherche d'une alternance pour
-          septembre 2025 afin de continuer à perfectionner mes compétences et
-          contribuer activement à des projets innovants.
+      <section id="miniBio">
+        <h1>script> Presente_Myself_ >/script></h1>
+        <hr class="underlineTitles" />
+        <p class="textBio">
+          After obtaining a work-study master's degree in finance, I specializes
+          in the field of IT to meet the needs and current technological issues.
+          This double journey allows me to develop a transversal approach,
+          combining financial rigor and mastery of digital tools. Currently
+          looking for an internship for mid-2025, I am also looking for a
+          work-study program for September 2025 in order to continue to perfect
+          my skills and actively contribute to innovative projects.
         </p>
-        <button><a href="indexAbout.html">Know more</a></button>
-        <br />
-      </div>
+        <hr class="line" />
+        <div class="scrollingText">
+          <p>
+            Currently on the market<span style="font-weight: bold"
+              >for an INTERNSHIP</span
+            >
+            at the end of the scholar year. And an
+            <span style="font-weight: bold">ALTERNANCE</span> for septembre
+            2025
+          </p>
+        </div>
+        <hr class="line" />
+        <button><a href="indexAbout.html">Read More</a></button>
+        <hr class="line" />
+      </section>
       <div class="profil">
         <h1>script> Profil HightLights(); /script></h1>
+        <hr class="underlineTitles" />
         <div class="profilBoard">
           <div class="profilBoardLeft">
-            <div class="chart">
-              <h4>Skills</h4>
-              <img src="image/graph skills.png" alt="" />
-              <p></p>
-            </div>
+            <a class="chartLink" href="indexSkills.html">
+              <div class="chart">
+                <h2>Skills</h2>
+                <img
+                  class="chartbarImg"
+                  src="image/graph skills.png"
+                  alt="chart bar of skills domain"
+                />
+                <p></p>
+                <div class="hiddenSkills">
+                  <div class="boardSkillsCards">
+                    <div class="boardSkillsCardsline">
+                      <div class="card finance">
+                        <div class="cardSymbol cardSymbolFinance">
+                          <img
+                            src="image/finance logo.png"
+                            alt="Finance Logo"
+                          />
+                          <h4>Finance</h4>
+                          <hr class="line" />
+                        </div>
+                        <div class="boardSkillsCardText">
+                          <p>Gestion de Patrimoine</p>
+                          <p>Gestion d'actifs</p>
+                          <p>Mathématique Financière</p>
+                          <p>Comptabilité Analytique</p>
+                          <p>Analyse Financières</p>
+                          <p>Reglementation et Conformité</p>
+                          <p>Gestion des risques</p>
+                        </div>
+                      </div>
+                      <div class="card developement">
+                        <div class="cardSymbol cardSymbolDevelopement">
+                          <img
+                            src="image/programation logo.png"
+                            alt="Web developement Logo"
+                          />
+                          <h4>Development</h4>
+                          <hr class="line" />
+                        </div>
+                        <div class="boardSkillsCardText">
+                          <p>HTML</p>
+                          <p>CSS</p>
+                          <p>JAVASCRIPT</p>
+                          <p>PHP</p>
+
+                          <p>FIGMA</p>
+                          <p>REACT</p>
+                          <p>SQL</p>
+                          <p>UX/UI</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="boardSkillsCardsline">
+                      <div class="card fiscality">
+                        <div class="cardSymbol cardSymbolFiscality">
+                          <img
+                            src="image/Fiscality logo.png"
+                            alt="Fiscality Logo"
+                          />
+                          <h4>Fiscality</h4>
+                          <hr class="line" />
+                        </div>
+                        <div class="boardSkillsCardText">
+                          <p>Entreprise</p>
+                          <p>Transmission</p>
+                          <p>Immobilière</p>
+                          <p>Particuliers</p>
+                          <p>Planification Successoral</p>
+                          <p>Optimisation</p>
+                        </div>
+                      </div>
+                      <div class="card programmeur">
+                        <div class="cardSymbol cardSymbolProgrammeur">
+                          <img
+                            src="image/programation logo.png"
+                            alt="programation logo"
+                          />
+                          <h4>Programmeur</h4>
+                          <hr class="line" />
+                        </div>
+                        <div class="boardSkillsCardText">
+                          <p>PYTHON</p>
+                          <p>ALGORITHMIE</p>
+                          <p>LINUX</p>
+                          <p>VSCODE</p>
+                          <p>GIT</p>
+                          <p>DOCKER</p>
+                          <p>DBEAVER</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
             <div class="certifications">
-              <h4>Certification</h4>
-              <div class="certificationImg">
-                <img src="" alt="AMF certification logo" />
-                <img src="" alt="CEGP certification logo" />
+              <h2>Certification</h2>
+              <div class="certificationsImg">
+                <a href=""
+                  ><img
+                    src="image/amf-radiation-psan.webp"
+                    alt="AMF certification logo"
+                /></a>
+                <a href=""
+                  ><img
+                    src="image/esbanque_certification_aesthetic.png"
+                    alt="CEGP certification logo"
+                /></a>
               </div>
             </div>
           </div>
@@ -98,54 +219,64 @@
         </div>
       </div>
       <div class="Projects">
-        <h1>LAST PROJECT</h1>
+        <h1>script> Last_Project(); /script></h1>
+        <hr class="underlineTitles" />
         <div class="lastProject">
           <img src="image/Projet 1.png" alt="Last project image" />
           <div class="lastProjectText">
             <h4>Web Integration</h4>
-            <p>
-              blabapkapsojzpadnblabapkapso jzpadnblabapk apsojzpadnblabapkapsoj
-              z pa d nblabap
-              kapsojzpadnblabapkapsojzpadnblabapkapsojzpadnblabapkapsojzpadn
+            <p class="textCorp">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
-            <div class="lastProjectSkillsContainer">
-              <br />
-              <p></p>
-              <br />
+            <div class="lastProjectSkills">
+              <hr class="cadre" />
+              <p>HTML / CSS / FIGMA</p>
+              <p class="hiddenLastProjectSkills">Projet HETIC</p>
+              <hr class="cadre" />
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div class="reseauxContainer">
-        <a href="">
-          <img src="image/linkedin logo.png" alt="Linkedin logo" />
-          <p>LINKEDIN</p>
-          <p>Akoudad elias.fr</p>
-        </a>
-        <a href="">
-          <img src="image/tel logo.png" alt="tel logo" />
-          <p>NUMERO</p>
-          <p>07.69.58.61.92</p>
-        </a>
-        <a href="">
-          <img src="image/mail logo.png" alt="mail logo" />
-          <p>MAIL</p>
-          <p>ilyesakd@gmail.com</p>
-        </a>
-      </div>
-      <div class="contactContainer">
-        <div class="contactContainerInfo">
-          <p>Name</p>
-          <input class="contactContainerName" type="text" />
-          <p>E Mail</p>
-          <input class="contactContainerEmail" type="text" />
+    <footer id="bottom">
+      <div class="footerContainer">
+        <div class="reseauxContainer">
+          <a href="#">
+            <img src="image/tel logo.png" alt="tel logo" />
+
+            <p>07.69.58.61.92</p>
+          </a>
+          <a href="mailto:ilyesakd@gmail.com">
+            <img src="image/mail logo.png" alt="mail logo" />
+
+            <p>ilyesakd@gmail.com</p>
+          </a>
+          <div class="socialOnline">
+            <a href="https://www.linkedin.com/in/elias-akoudad-837116167/">
+              <img src="image/linkedin logo.png" alt="Linkedin logo" />
+            </a>
+            <a href="https://github.com/lsayah">
+              <img src="image/Github logo.png" alt="Linkedin logo" />
+            </a>
+          </div>
         </div>
-        <div class="contactContainerMessage">
+        <div class="contactContainer">
+          <p>Name</p>
+          <input class="contactContainerInfo" type="text" />
+          <p>E Mail</p>
+          <input class="contactContainerInfo" type="text" />
+
           <p>Message</p>
-          <input type="text" />
+          <input class="contactContainerMessage" type="text" />
+
+          <button class="contactContainerSend">SEND</button>
         </div>
       </div>
     </footer>

@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Page</title>
     <link rel="stylesheet" href="styleProject.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbit&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="navBar">
-        <p class="generalTitle">PORTEFOLIO</p>
+        <p class="generalTitle">PORTFOLIO</p>
         <div id="burgerMenu" onclick="toggleMenu()">&#9776;</div>
         <ul class="navBarList">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="indexAbout.html">About</a></li>
-          <li><a href="indexSkills.html">Skills</a></li>
-          <li><a href="indexProjects.html">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="indexAbout.html">ABOUT</a></li>
+          <li><a href="indexSkills.html">SKILLS</a></li>
+          <li><a href="indexProjects.html">PROJECT</a></li>
+          <li><a href="index.html#bottom">CONTACT</a></li>
         </ul>
       </div>
     </header>
 
     <main>
       <div class="page">
-        <input type="radio" name="position" checked />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
-        <input type="radio" name="position" />
+        <div type="radio" name="position" checked />
+        <div type="radio" name="position" />
+        <div type="radio" name="position" />
+        <div type="radio" name="position" />
+        <div type="radio" name="position" />
         <section id="carousel">
           <div class="item"></div>
           <div class="item"></div>
@@ -38,36 +50,6 @@
       </div>
     </main>
 
-    <footer>
-      <div class="reseauxContainer">
-        <a href="">
-          <img src="image/linkedin logo.png" alt="Linkedin logo" />
-          <p>LINKEDIN</p>
-          <p>Akoudad elias.fr</p>
-        </a>
-        <a href="">
-          <img src="image/tel logo.png" alt="tel logo" />
-          <p>NUMERO</p>
-          <p>07.69.58.61.92</p>
-        </a>
-        <a href="">
-          <img src="image/mail logo.png" alt="mail logo" />
-          <p>MAIL</p>
-          <p>ilyesakd@gmail.com</p>
-        </a>
-      </div>
-      <div class="contactContainer">
-        <div class="contactContainerInfo">
-          <p>Name</p>
-          <input class="contactContainerName" type="text" />
-          <p>E Mail</p>
-          <input class="contactContainerEmail" type="text" />
-        </div>
-        <div class="contactContainerMessage">
-          <p>Message</p>
-          <input type="text" />
-        </div>
-      </div>
-    </footer>
+    <script src="scriptProjects.js"></script>
   </body>
 </html>
