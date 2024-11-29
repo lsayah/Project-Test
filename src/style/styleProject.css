@@ -130,7 +130,7 @@ body {
 
 @media (max-width: 860px) {
   .navBar {
-    background: rgb(39, 0, 0);
+    background:var(--gradient-inverse-color);
   }
   .navBarList {
     display: none;

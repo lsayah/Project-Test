@@ -7,7 +7,7 @@
   --fourth-color: #233044;
   --gradient-color: linear-gradient(0deg, #233044 19%, #00000090 100%);
   --gradient-inverse-color: linear-gradient(0deg, #000000 19%, #233044 100%);
-  --second-gradient-color: linear-gradient(0deg, #004D67 19%, #00FFFF 100%);
+  --second-gradient-color: linear-gradient(0deg, #004d67 19%, #00ffff 100%);
   --main-font-color: #00ffff;
   --second-font-color: #ffffff;
 
@@ -81,7 +81,7 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: #233044;
   transform: scaleX(0);
   transition: 0.5s;
   transition-delay: 0s;
@@ -134,7 +134,7 @@ body {
 
 @media (max-width: 860px) {
   .navBar {
-    background: rgb(39, 0, 0);
+    background: var(--gradient-inverse-color);
   }
   .navBarList {
     display: none;
@@ -142,7 +142,7 @@ body {
     width: 30%;
     gap: 10px;
     text-align: center;
-    background: var(--gradient-color);
+    background: var(--gradient-inverse-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -341,8 +341,6 @@ main h1 {
     width: 95%;
     padding: 15% 0%;
   }
-
-  
 }
 
 /* scrollingText */
@@ -391,7 +389,6 @@ main h1 {
 #miniBio button:hover {
   background-color: var(--main-color);
   scale: 1.1;
- 
 }
 
 #miniBio button a {
@@ -404,8 +401,8 @@ main h1 {
 
 @media (max-width: 768px) {
   #miniBio button {
-  padding: 0;
-}
+    padding: 0;
+  }
 }
 
 /* HightLights */
