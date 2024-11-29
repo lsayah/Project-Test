@@ -208,6 +208,13 @@ main h4 {
   text-shadow: 6px 6px 15px rgba(0, 0, 0, 1);
 }
 
+@media (max-width: 1100px) {
+  main h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
 /* Bio */
 
 .bio {
@@ -475,11 +482,7 @@ main h4 {
   justify-content: center;
 }
 
-.interest h1 {
-  color: var(--main-font-color);
-  font-size: 50px;
-  font-family: var(--main-font);
-}
+
 
 .interestChartBar {
   display: flex;
